@@ -5,7 +5,7 @@ import Keyboard from "./components/Keyboard.jsx";
 import { gameStatus } from "./domaiin/gameStatus.js";
 import { coloredKeyboard } from "./domaiin/coloredKeyboard.js";
 
-const initialState = ()=> {
+const getInitialState = ()=> {
    return fetchData().then(({ words }) => {
     const secretWord = words[Math.floor(Math.random() * words.length)].toUpperCase()
     // console.log('secret', secret);
@@ -27,13 +27,14 @@ function App() {
   
   
   const [state, setState] = useState(null)
+  console.log('state', state);
 
 
     useEffect(() => {
   //     fetchData().then(data => {
   //         const secret = data.words[Math.floor(Math.random() * data.words.length)].toUpperCase()
   //         setState({...state, secretWord:secret}) 
-    initialState().then((x) => {
+    getInitialState().then((x) => {
       setState(x)
     })
   // })
@@ -76,7 +77,8 @@ const addGuess = () => {
   // https://react.dev/reference/react/useState#setstate
 
   setState((state)=> {
-    if(state.currentGuess.length !== 5 || !words.includes(state.currentGuess)  ) {
+    // if(state.currentGuess.length !== 5 || !words.includes(state.currentGuess)  ) {
+    if(state.currentGuess.length !== 5  ) {
       return state
     }
     return {
@@ -96,7 +98,7 @@ const addGuess = () => {
 }
 
 const handlePlayAgain = ()=> {
-  initialState().then((x) => {
+  getInitialState().then((x) => {
     setState(x)
   })
 }

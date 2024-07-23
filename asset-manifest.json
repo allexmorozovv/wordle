@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/https//allexmorozovv.github.io/wordle/static/css/main.fd909986.css",
-    "main.js": "/https//allexmorozovv.github.io/wordle/static/js/main.75be2cce.js",
-    "index.html": "/https//allexmorozovv.github.io/wordle/index.html",
-    "main.fd909986.css.map": "/https//allexmorozovv.github.io/wordle/static/css/main.fd909986.css.map",
-    "main.75be2cce.js.map": "/https//allexmorozovv.github.io/wordle/static/js/main.75be2cce.js.map"
+    "main.css": "/wordle/static/css/main.fd909986.css",
+    "main.js": "/wordle/static/js/main.75be2cce.js",
+    "index.html": "/wordle/index.html",
+    "main.fd909986.css.map": "/wordle/static/css/main.fd909986.css.map",
+    "main.75be2cce.js.map": "/wordle/static/js/main.75be2cce.js.map"
   },
   "entrypoints": [
     "static/css/main.fd909986.css",

@@ -111,6 +111,7 @@ const handlePlayAgain = ()=> {
 // console.log("guesses", guesses);
 
   return (
+    
     <div className="main">
      <h1 className="title">Wordle</h1>
 

@@ -29,6 +29,7 @@ function Keyboard({ onLetterPress, deleteLastLetter, addGuess, keyboardBackgroud
   return (
     <div className='keyboard'>
       <div className='keyboard-row'>
+        
         <KeyboardRow row={keyboardRows[0]} onLetterPress={onLetterPress} keyboardBackgroudColor={keyboardBackgroudColor} />
       </div>
       <div className='keyboard-row'>
